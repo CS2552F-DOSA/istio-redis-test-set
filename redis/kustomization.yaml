@@ -4,3 +4,4 @@ configMapGenerator:
   - redis-config
 resources:
 - redis-pod.yaml
+- visit-counter.yaml

@@ -1,18 +1,18 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: visit-counter
+  name: redis-client
   labels:
-    app: visit-counter
+    app: redis-client
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        app: visit-counter
+        app: redis-client
     spec:
       containers:
-      - name: visit-counter
+      - name: redis-client
         image: "tiancanyu/redis-client:v1"
         ports:
         - name: http
@@ -21,11 +21,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: visit-counter
+  name: redis-client
 spec:
   type: LoadBalancer
   selector:
-    app: visit-counter
+    app: redis-client
   ports:
   - port: 80
     targetPort: 8080

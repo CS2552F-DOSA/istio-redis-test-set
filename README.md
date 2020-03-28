@@ -25,7 +25,7 @@ cd ../redis
 docker pull tiancanyu/redis-client:v1; kubectl delete -k .; kubectl apply -k .; kubectl get pods
 ```
 
-![Screen Shot 2020-03-27 at 10.39.52 PM](img/Screen%20Shot%202020-03-27%20at%2010.39.52%20PM.png)
+
 
 Wait for a while
 
@@ -33,7 +33,7 @@ Wait for a while
 kubectl get pods
 ```
 
-![Screen Shot 2020-03-27 at 10.40.54 PM](img/Screen%20Shot%202020-03-27%20at%2010.40.54%20PM.png)
+
 
 We see the "2/2" and "1/2", which means that the sidecars have been injected so that there are 2 containers in each pod.
 

@@ -41,7 +41,7 @@ We see the "2/2" and "1/2", which means that the sidecars have been injected so 
 kubectl logs redis-client-bc84977c9-nqxr7 redis-client
 ```
 
-See the successful connection with redis. Since the app hasn't been implemented, so, there is failures after the execution of the client.py.
+See the successful connection with redis. Since the app hasn't been implemented, so, there is failures after the execution of the istio-redis-test-set/redis/client/python-docs-samples/memorystore/redis/main.py.
 
 ![Screen Shot 2020-03-27 at 11.13.33 PM](img/Screen%20Shot%202020-03-27%20at%2011.13.33%20PM.png)
 

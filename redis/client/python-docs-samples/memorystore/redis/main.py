@@ -23,7 +23,7 @@ app = Flask(__name__)
 # redis_port = int(os.environ.get('REDISPORT', 6379))
 # redis_client = redis.StrictRedis(host=redis_host, port=redis_port)
 
-redis_host = 'localhost'
+redis_host = 'redis'
 redis_port = "6379"
 redis_client = redis.Redis(host=redis_host, port=redis_port)
 

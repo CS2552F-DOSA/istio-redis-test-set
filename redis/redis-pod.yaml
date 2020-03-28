@@ -1,3 +1,4 @@
+# redis
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
@@ -30,6 +31,8 @@ spec:
     port: 6379
     targetPort: 6379
 
+    
+# redis test
 ---
 apiVersion: extensions/v1beta1
 kind: Deployment

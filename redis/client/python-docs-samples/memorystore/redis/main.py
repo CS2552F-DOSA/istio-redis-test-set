@@ -72,7 +72,7 @@ import time
 
 # HOST = os.getenv('CLIENT_PROXY', "http://localhost:9001")
 
-print("************* test client begin *************\n")
+print("************* client begin *************\n")
 
 r = redis.Redis(
     host= REDIS_HOST,
@@ -93,5 +93,5 @@ print("getted value for foo in redis: ", value)
 
 
 
-print("\n************* test client end *************")
+print("\n************* client end *************")
 time.sleep(3)

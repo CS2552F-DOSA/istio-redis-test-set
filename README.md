@@ -45,25 +45,25 @@ kubectl logs visit-counter-5bd898ffbc-2mvhl visit-counter
 
 See the successful connection with redis. Since the app hasn't been implemented, so, there is failures after the execution of the client.py.
 
-![Screen Shot 2020-03-27 at 10.42.48 PM](img/Screen%20Shot%202020-03-27%20at%2010.42.48%20PM.png)
+
 
 ```bash
 kubectl logs visit-counter-5bd898ffbc-2mvhl istio-proxy
 ```
 
-![Screen Shot 2020-03-27 at 10.45.04 PM](img/Screen%20Shot%202020-03-27%20at%2010.45.04%20PM.png)
+
 
 ```bash
 kubectl logs redis-74c769c975-9bnn9 redis
 ```
 
-![Screen Shot 2020-03-27 at 10.46.42 PM](img/Screen%20Shot%202020-03-27%20at%2010.46.42%20PM-5363632.png)
+
 
 ```bash
 kubectl logs redis-74c769c975-9bnn9 istio-proxy
 ```
 
-![Screen Shot 2020-03-27 at 10.47.28 PM](img/Screen%20Shot%202020-03-27%20at%2010.47.28%20PM.png)
+
 
 
 

@@ -82,4 +82,4 @@ r = redis.Redis(
 print("set foo -> bar hello")
 r.set('foo', 'bar hello')
 value = r.get('foo')
-print("getted value for foo", value)
+print("getted value for foo: ", value)

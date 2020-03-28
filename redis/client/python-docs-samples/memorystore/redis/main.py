@@ -68,6 +68,7 @@ REDIS_TEST_PORT = "1998"
 
 import redis
 import os
+import time
 
 # HOST = os.getenv('CLIENT_PROXY', "http://localhost:9001")
 
@@ -85,3 +86,4 @@ r.set('foo', 'bar hello')
 value = r.get('foo')
 print("getted value for foo: ", value)
 print("end _________________")
+time.sleep(2)

@@ -13,6 +13,7 @@
 # [START memorystore_main_py]
 
 # # Part 1 counter test
+# With this part, curl localhost will get the counter result.
 # import logging
 # import os
 
@@ -53,7 +54,7 @@
 
 
 # Part 2 normal access for redis
-
+# Simple test for redis write and read.
 # Two options: normal redis client and asyncio-redis
 
 REDIS_HOST = "redis"

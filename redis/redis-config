@@ -1,2 +1,0 @@
-maxmemory 20mb
-maxmemory-policy allkeys-lru

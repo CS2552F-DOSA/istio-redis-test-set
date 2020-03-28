@@ -58,10 +58,10 @@
 # Two options: normal redis client and asyncio-redis
 
 REDIS_HOST = "redis"
-REDIS_TEST_HOST = "localhost:9911/redis/test"
+REDIS_TEST_HOST = "redis-test"
 
 REDIS_PORT = "6379"
-REDIS_TEST_PORT = "1998"
+REDIS_TEST_PORT = "6379"
 
 # Normal redis client
 # Referring to https://redislabs.com/lp/python-redis/
@@ -72,18 +72,26 @@ import time
 
 # HOST = os.getenv('CLIENT_PROXY', "http://localhost:9001")
 
-print("client\n___________")
-# print(HOST)
-
-# HOST += "/"
-# print("HOST: ", HOST)
+print("************* test client begin *************\n")
 
 r = redis.Redis(
     host= REDIS_HOST,
     port= REDIS_PORT)
-print("set foo -> bar hello")
-r.set('foo', 'bar hello')
+print("set foo in redis, foo -> bar redis")
+r.set('foo', 'bar redis')
 value = r.get('foo')
-print("getted value for foo: ", value)
-print("end _________________")
+print("getted value for foo in redis: ", value)
+print("\n\n")
+
+r_test = redis.Redis(
+    host= REDIS_TEST_HOST,
+    port= REDIS_TEST_PORT)
+print("set foo in redis-test, foo -> bar redis-test")
+r_test.set('foo', 'bar redis-test')
+value = r_test.get('foo')
+print("getted value for foo in redis: ", value)
+
+
+
+print("\n************* test client end *************")
 time.sleep(3)

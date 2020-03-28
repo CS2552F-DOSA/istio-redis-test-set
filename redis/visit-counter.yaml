@@ -14,12 +14,12 @@ spec:
       containers:
       - name: visit-counter
         image: "tiancanyu/redis-client:v1"
-        env:
-        - name: REDISHOST
-          valueFrom:
-            configMapKeyRef:
-              name: redishost
-              key: REDISHOST
+        # env:
+        # - name: REDISHOST
+        #   valueFrom:
+        #     configMapKeyRef:
+        #       name: redishost
+        #       key: REDISHOST
         ports:
         - name: http
           containerPort: 8080

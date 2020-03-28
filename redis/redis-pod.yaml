@@ -14,12 +14,6 @@ spec:
       containers:
       - name: redis
         image: redis:5.0.4
-        # env:
-        # - name: REDISHOST
-        #   valueFrom:
-        #     configMapKeyRef:
-        #       name: redishost
-        #       key: REDISHOST
         ports:
         - containerPort: 6379
 ---
@@ -53,12 +47,6 @@ spec:
       containers:
       - name: redis_test
         image: redis:5.0.4
-        # env:
-        # - name: REDISHOST
-        #   valueFrom:
-        #     configMapKeyRef:
-        #       name: redishost
-        #       key: REDISHOST
         ports:
         - containerPort: 6379
 ---
